@@ -1,0 +1,235 @@
+body {
+  background-color: #F0F2F5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0077FF;
+  color: #FFFFFF;
+  padding: 16px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+h1 {
+  color: #363636;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+p {
+  color: #363636;
+  font-size: 18px;
+  margin: 0 0 32px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  color: #363636;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 16px;
+  padding: 12px 24px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #F0F2F5;
+}
+
+button.primary {
+  background-color: #0077FF;
+  color: #FFFFFF;
+}
+
+button.secondary {
+  background-color: #E2E8F0;
+  color: #363636;
+}
+
+button.warning {
+  background-color: #FFCC00;
+  color: #363636;
+}
+
+button.success {
+  background-color: #4BB543;
+  color: #FFFFFF;
+}
+button.cancel {
+  background-color: #FF5733;
+  color: #FFFFFF;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  display: block;
+  padding: 0.5rem;
+  border: 2px solid #CCCCCC;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4BB543;
+}
+
+/* card style */
+.card {
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-button.primary {
+  background-color: #4BB543;
+  color: #FFFFFF;
+  border: none;
+}
+
+.card-button.secondary {
+  background-color: #CCCCCC;
+  color: #000000;
+  border: none;
+}
+
+.card-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* datatable */
+#hotelTable {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#hotelTable td, #hotelTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#hotelTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#hotelTable tr:hover {background-color: #ddd;}
+
+#hotelTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* menu bar */
+/* Estilos para el menú vertical */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #252525;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #fff;
+  color: #252525;
+}
+
+/* Estilos para el contenido */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
